@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanis BEBEY NJOMNYAM - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <div class="logo" onclick="scrollToSection('hero')">Portfolio</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" onclick="scrollToSection('about')">À propos</a></li>
+                <li><a href="#projects" onclick="scrollToSection('projects')">Projets</a></li>
+                <li><a href="#skills" onclick="scrollToSection('skills')">Compétences</a></li>
+                <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="avatar">JD</div>
+            <h1>Bonjour, je m'appelle Yanis BEBEY NJOMNYAM</h1>
+            <p class="hero-description">
+                Etudiant en deuxième passionné par la création d'expériences web modernes et performantes. 
+                Spécialisé en React, TypeScript et Node.js.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('projects')">Voir mes projets</button>
+                <button class="btn btn-outline" onclick="scrollToSection('contact')">Me contacter</button>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:jean.dupont@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content">
+                <img src="https://images.unsplash.com/photo-1693159682660-c125e71844d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMHdvcmtzcGFjZSUyMGRlc2t8ZW58MXx8fHwxNzYyNDU4NTgzfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Workspace">
+                <div>
+                    <p>Développeur web avec plus de 5 ans d'expérience dans la création d'applications web modernes et évolutives. Je suis passionné par les nouvelles technologies et j'aime résoudre des problèmes complexes avec des solutions élégantes.</p>
+                    <p>Mon parcours m'a permis de travailler sur une grande variété de projets, des startups innovantes aux grandes entreprises, en passant par des projets open source.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <p class="section-description">
+                Voici une sélection de projets sur lesquels j'ai travaillé récemment.
+            </p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1627634771121-fa3db5779f60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHByb2plY3R8ZW58MXx8fHwxNzYyNDUwNDgzfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="E-commerce">
+                    <div class="project-content">
+                        <h3>Application E-commerce</h3>
+                        <p>Une plateforme e-commerce complète avec panier, paiement en ligne et gestion des commandes.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Stripe</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://example.com" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Démo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ258ZW58MXx8fHwxNzYyNDc5Njg0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Fitness App">
+                    <div class="project-content">
+                        <h3>Application Mobile de Fitness</h3>
+                        <p>Application mobile pour suivre ses entraînements, ses calories et ses objectifs fitness.</p>
+                        <div class="project-tags">
+                            <span>React Native</span>
+                            <span>TypeScript</span>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://example.com" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Démo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjI0MjcwMDd8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Dashboard">
+                    <div class="project-content">
+                        <h3>Dashboard Analytique</h3>
+                        <p>Tableau de bord interactif pour visualiser et analyser des données en temps réel.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>D3.js</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://example.com" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Démo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Compétences</h2>
+            <p class="section-description">
+                Technologies et outils que j'utilise pour créer des applications web performantes.
+            </p>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Next.js</span>
+                        <span>Tailwind CSS</span>
+                        <span>Redux</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>GraphQL</span>
+                        <span>REST API</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Base de données</h3>
+                    <div class="skill-tags">
+                        <span>PostgreSQL</span>
+                        <span>MongoDB</span>
+                        <span>Redis</span>
+                        <span>Prisma</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Outils & Autres</h3>
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>Docker</span>
+                        <span>AWS</span>
+                        <span>CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-moi</h2>
+            <p class="section-description">
+                Vous avez un projet en tête ? N'hésitez pas à me contacter !
+            </p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informations</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <a href="mailto:yanis6026@gmail.com">yanis6026@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Téléphone</strong>
+                            <a href="tel:+33641482622">+33 6 41 48 26 22</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Localisation</strong>
+                            <p>Paris, France</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="email" placeholder="votre.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Votre message..." rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p>&copy; 2026 Yanis BEBEY NJOMNYAM. Tous droits réservés.</p>
+                    <p>Développeur Full Stack</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:jean.dupont@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
