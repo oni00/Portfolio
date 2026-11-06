@@ -3,177 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yanis BEBEY NJOMNYAM - Portfolio</title>
+    <title>Yanis BEBEY NJOMNYAM - Portfolio BTS SIO</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header  -->
     <header id="header">
         <nav class="container">
             <div class="logo" onclick="scrollToSection('hero')">Portfolio</div>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#about" onclick="scrollToSection('about')">À propos</a></li>
-                <li><a href="#projects" onclick="scrollToSection('projects')">Projets</a></li>
-                <li><a href="#skills" onclick="scrollToSection('skills')">Compétences</a></li>
+                <li><a href="#accueil" onclick="scrollToSection('accueil')">Accueil</a></li>
+                <li><a href="#epreuves" onclick="scrollToSection('epreuves')">Épreuves</a></li>
+                <li><a href="#ateliers" onclick="scrollToSection('ateliers')">Ateliers pro</a></li>
+                <li><a href="#veille" onclick="scrollToSection('veille')">Veille</a></li>
+                <li><a href="#certifications" onclick="scrollToSection('certifications')">Certifications</a></li>
                 <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
             </ul>
-            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu">
                 <i class="fas fa-bars"></i>
             </button>
         </nav>
     </header>
 
-    <!-- Hero -->
+    <!-- ACCUEIL  -->
     <section id="hero" class="hero">
         <div class="container">
-            <div class="avatar">JD</div>
+            <div class="avatar">YB</div>
             <h1>Bonjour, je m'appelle Yanis BEBEY NJOMNYAM</h1>
             <p class="hero-description">
-                Etudiant en deuxième passionné par la création d'expériences web modernes et performantes. 
+                Étudiant en 2<sup>e</sup> année de BTS SIO, option SISR (Solutions d'Infrastructure, Systèmes et Réseaux).
+                Je présente ici mon parcours, mes épreuves E5 et E6, mes ateliers professionnels et ma veille technologique.
             </p>
             <div class="hero-buttons">
-                <button class="btn btn-primary" onclick="scrollToSection('projects')">Voir mes projets</button>
+                <button class="btn btn-primary" onclick="scrollToSection('epreuves')">Voir mes épreuves</button>
                 <button class="btn btn-outline" onclick="scrollToSection('contact')">Me contacter</button>
             </div>
             <div class="social-links">
-                <a href="https://github.com/oni00/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="yanis6026@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/oni00/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:yanis6026@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="about">
+    <!-- BTS SIO, rôle en entreprise, CV, entreprise, école -->
+    <section id="accueil" class="about">
         <div class="container">
-            <h2 class="section-title">À propos de moi</h2>
-            <div class="about-content">
-                <img src="https://images.unsplash.com/photo-1693159682660-c125e71844d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMHdvcmtzcGFjZSUyMGRlc2t8ZW58MXx8fHwxNzYyNDU4NTgzfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Workspace">
-                <div>
-                    <p>Développeur web avec plus de 5 ans d'expérience dans la création d'applications web modernes et évolutives. Je suis passionné par les nouvelles technologies et j'aime résoudre des problèmes complexes avec des solutions élégantes.</p>
-                    <p>Mon parcours m'a permis de travailler sur une grande variété de projets, des startups innovantes aux grandes entreprises, en passant par des projets open source.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Mes Projets</h2>
-            <p class="section-description">
-                Voici une sélection de projets sur lesquels j'ai travaillé récemment.
-            </p>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1627634771121-fa3db5779f60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHByb2plY3R8ZW58MXx8fHwxNzYyNDUwNDgzfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="E-commerce">
-                    <div class="project-content">
-                        <h3>Application E-commerce</h3>
-                        <p>Une plateforme e-commerce complète avec panier, paiement en ligne et gestion des commandes.</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>Stripe</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> Code</a>
-                            <a href="https://example.com" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Démo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ258ZW58MXx8fHwxNzYyNDc5Njg0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Fitness App">
-                    <div class="project-content">
-                        <h3>Application Mobile de Fitness</h3>
-                        <p>Application mobile pour suivre ses entraînements, ses calories et ses objectifs fitness.</p>
-                        <div class="project-tags">
-                            <span>React Native</span>
-                            <span>TypeScript</span>
-                            <span>Firebase</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> Code</a>
-                            <a href="https://example.com" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Démo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjI0MjcwMDd8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Dashboard">
-                    <div class="project-content">
-                        <h3>Dashboard Analytique</h3>
-                        <p>Tableau de bord interactif pour visualiser et analyser des données en temps réel.</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>D3.js</span>
-                            <span>PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> Code</a>
-                            <a href="https://example.com" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Démo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Compétences</h2>
-            <p class="section-description">
-                Technologies et outils que j'utilise pour créer des applications web performantes.
-            </p>
+            <h2 class="section-title">Accueil</h2>
+            <p class="section-description">Qui je suis, ma formation et mon parcours en entreprise.</p>
 
             <div class="skills-grid">
                 <div class="skill-card">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Frontend</h3>
-                    <div class="skill-tags">
-                        <span>React</span>
-                        <span>TypeScript</span>
-                        <span>Next.js</span>
-                        <span>Tailwind CSS</span>
-                        <span>Redux</span>
+                    <i class="fas fa-user"></i>
+                    <h3>Présentation du candidat</h3>
+                    <p>Yanis BEBEY NJOMNYAM, étudiant en BTS SIO à Paris. <span class="todo">[Ajouter 2-3 phrases sur ton parcours et tes centres d'intérêt]</span></p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Présentation du BTS SIO</h3>
+                    <p>Le BTS Services Informatiques aux Organisations forme aux métiers de l'informatique en entreprise. Je suis l'option SISR, centrée sur les réseaux, les systèmes et la cybersécurité.</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Rôle dans l'entreprise</h3>
+                    <p class="todo">[Décrire ta mission, tes tâches quotidiennes et les outils utilisés]</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-file-lines"></i>
+                    <h3>Mon CV</h3>
+                    <p>Version à jour de mon CV.</p>
+                    <div class="project-links">
+                        <a href="documents/CV_Yanis_BEBEY_NJOMNYAM.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-download"></i> Télécharger</a>
                     </div>
                 </div>
 
                 <div class="skill-card">
-                    <i class="fas fa-server"></i>
-                    <h3>Backend</h3>
-                    <div class="skill-tags">
-                        <span>Node.js</span>
-                        <span>Express</span>
-                        <span>GraphQL</span>
-                        <span>REST API</span>
-                    </div>
+                    <i class="fas fa-building"></i>
+                    <h3>Entreprise</h3>
+                    <p class="todo">[Nom de l'entreprise, secteur, taille, service d'accueil, logo]</p>
                 </div>
 
                 <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Base de données</h3>
-                    <div class="skill-tags">
-                        <span>PostgreSQL</span>
-                        <span>MongoDB</span>
-                        <span>Redis</span>
-                        <span>Prisma</span>
+                    <i class="fas fa-school"></i>
+                    <h3>École</h3>
+                    <p class="todo">[Nom de l'école, ville, rythme de l'alternance]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ÉPREUVES -->
+    <section id="epreuves" class="projects">
+        <div class="container">
+            <h2 class="section-title">Épreuves</h2>
+            <p class="section-description">Documents officiels des épreuves E5 et E6.</p>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>E5 : Tableau de synthèse</h3>
+                        <p>Tableau récapitulatif des situations professionnelles, des compétences mobilisées et des preuves associées.</p>
+                        <div class="project-tags">
+                            <span>E5</span>
+                            <span>Compétences</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="documents/E5_tableau_synthese.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> Consulter</a>
+                        </div>
                     </div>
                 </div>
 
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>E6 : Fiche de situation 1</h3>
+                        <p>Situation professionnelle <strong>Réseau</strong>. <span class="todo">[Résumer en une phrase le contexte et ta réalisation]</span></p>
+                        <div class="project-tags">
+                            <span>E6</span>
+                            <span>Réseau</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="documents/E6_fiche_situation_1_reseau.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> Consulter</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>E6 : Fiche de situation 2</h3>
+                        <p>Situation professionnelle <strong>Système</strong>. <span class="todo">[Résumer en une phrase le contexte et ta réalisation]</span></p>
+                        <div class="project-tags">
+                            <span>E6</span>
+                            <span>Système</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="documents/E6_fiche_situation_2_systeme.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> Consulter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ATELIER PRO -->
+    <section id="ateliers" class="skills">
+        <div class="container">
+            <h2 class="section-title">Ateliers professionnels</h2>
+            <p class="section-description">Les projets réalisés pendant ma formation.</p>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>A1 : Projet Active Directory</h3>
+                        <p>Mise en place d'un domaine Active Directory : utilisateurs, groupes, stratégies de groupe.</p>
+                        <div class="project-tags">
+                            <span>Active Directory</span>
+                            <span>Windows Server</span>
+                            <span>GPO</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="documents/A1_projet_AD.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> Documentation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>A2 : Projet GLPI</h3>
+                        <p>Déploiement d'un outil de gestion de parc informatique et de tickets d'assistance.</p>
+                        <div class="project-tags">
+                            <span>GLPI</span>
+                            <span>Inventaire</span>
+                            <span>Helpdesk</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="documents/A2_projet_GLPI.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> Documentation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>A3 : Projet Cybersécurité</h3>
+                        <p class="todo">[Décrire le projet : objectif, outils, résultat]</p>
+                        <div class="project-tags">
+                            <span>Cybersécurité</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="documents/A3_projet_cyber.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> Documentation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>A4 : Projet Cisco</h3>
+                        <p>Configuration d'une infrastructure réseau avec du matériel Cisco. <span class="todo">[Préciser : VLAN, routage, ACL...]</span></p>
+                        <div class="project-tags">
+                            <span>Cisco</span>
+                            <span>Packet Tracer</span>
+                            <span>Réseau</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="documents/A4_projet_cisco.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> Documentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VEILLE TECHNOLOGIQUE / JURIDIQUE -->
+    <section id="veille" class="projects">
+        <div class="container">
+            <h2 class="section-title">Veille technologique et juridique</h2>
+            <p class="section-description">Les sujets que je suis et les outils que j'utilise pour m'informer.</p>
+
+            <div class="skills-grid">
                 <div class="skill-card">
-                    <i class="fas fa-tools"></i>
-                    <h3>Outils & Autres</h3>
+                    <i class="fas fa-tower-cell"></i>
+                    <h3>5G / IA</h3>
+                    <p class="todo">[Résumé de ta veille : sujet, évolutions récentes]</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-scale-balanced"></i>
+                    <h3>RGPD / CNIL</h3>
+                    <p class="todo">[Résumé de ta veille juridique : obligations, sanctions, actualités]</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-key"></i>
+                    <h3>Système</h3>
+                    <p class="todo">[Résumé de ta veille : chiffrement, cryptomonnaies...]</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-shield-halved"></i>
+                    <h3>Cybersécurité</h3>
+                    <p class="todo">[Résumé de ta veille : menaces, vulnérabilités, bonnes pratiques]</p>
+                </div>
+            </div>
+
+            <h3 class="sub-title">Outils de veille</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-rss"></i>
+                    <h3>Mes outils</h3>
                     <div class="skill-tags">
-                        <span>Git</span>
-                        <span>Docker</span>
+                        <span class="todo">[Flux RSS]</span>
+                        <span class="todo">[Newsletters]</span>
+                        <span class="todo">[Alertes]</span>
+                        <span class="todo">[Sites suivis]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="skills">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <p class="section-description">Certifications obtenues ou en cours.</p>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-award"></i>
+                    <h3>Certifications principales</h3>
+                    <div class="skill-tags">
+                        <span>NDG Linux</span>
+                        <span>CCNA</span>
+                        <span>CNIL</span>
+                        <span>ANSSI</span>
+                    </div>
+                    <p class="cert-status todo">[Indiquer pour chacune : obtenue ou en cours, et la date]</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Autres</h3>
+                    <div class="skill-tags">
+                        <span>Azure</span>
                         <span>AWS</span>
-                        <span>CI/CD</span>
                     </div>
+                    <p class="cert-status todo">[Ajouter les autres certifications]</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Badges</h3>
+                    <p>Badges délivrés par des sociétés certifiantes.</p>
+                    <p class="cert-status todo">[Ajouter les badges ou liens de vérification]</p>
                 </div>
             </div>
         </div>
@@ -184,7 +307,7 @@
         <div class="container">
             <h2 class="section-title">Contactez-moi</h2>
             <p class="section-description">
-                Vous avez un projet en tête ? N'hésitez pas à me contacter !
+                Une question sur mon parcours ou mes projets ? N'hésitez pas à me contacter.
             </p>
 
             <div class="contact-content">
@@ -219,7 +342,7 @@
                         <input type="text" id="name" name="name" placeholder="Votre nom" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">email</label>
+                        <label for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder="votre.email@example.com" required>
                     </div>
                     <div class="form-group">
@@ -238,13 +361,12 @@
             <div class="footer-content">
                 <div>
                     <p>&copy; 2026 Yanis BEBEY NJOMNYAM. Tous droits réservés.</p>
-                    <p>Développeur Full Stack</p>
+                    <p>Étudiant BTS SIO option SISR</p>
                 </div>
                 <div class="footer-social">
-                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="mailto:jean.dupont@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/oni00/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yanis-bebey-njomnyam-6a9996396/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto: yanis6026@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>
